@@ -1,0 +1,126 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:rgba(26, 163, 255, 0.233);
+  }
+h2, p {
+	padding-left:10px;
+}
+  
+/* Estilo del navbar, dropdown, dropbtn y el hover */
+.navbar, .navbar button {
+		overflow: hidden;
+		background-color: #1aa3ff;
+	}	
+.navbar a, .navbar button {
+		font-size: 25px;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}	
+.dropdown {
+		float: left;
+		overflow: hidden;
+	}	
+.dropdown .dropbtn {
+		font-size: 25px;  
+		border: none;
+		outline: none;
+		color: black;
+		padding: 14px 16px;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}	
+.navbar a:hover, .navbar button:hover, .dropdown:hover .dropbtn {
+		background-color: #ff8533;
+	}	
+.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #b3e0ff;
+		min-width: 271px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}	
+.dropdown-content a, .dropdown-content button{
+		float: none;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		/* position: absolute; */
+		background-color: #b3e0ff;
+		min-width: 271px;
+		/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+		border: none;
+		
+	}	
+.dropdown-content a:hover, .dropdown-content  button:hover{
+		background-color: #ffc299;
+	}	
+.dropdown:hover .dropdown-content {
+		display: block;
+	}
+#verEstadisticas{
+	border: none;
+}
+
+/* Estilo del tablero y casillas */
+
+.tablero {
+	background: #096FB3;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 15px;
+	margin-top: 50px;
+	width: 630px;
+  }
+.casilla {
+	background: #FFA359;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 200px;
+	border: 2px black solid;
+	font-size:30px;
+	cursor: pointer;
+  }
+.fichaCruz {
+	background: #FFA359;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 200px;
+	border: 2px black solid;
+	font-size:30px;
+	cursor: pointer;
+	background-image:url('equis.png') ;
+}
+.fichaCirculo{
+	background: #FFA359;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 200px;
+	border: 2px black solid;
+	font-size:30px;
+	cursor: pointer;
+	background-image:url('circulo.png') ;
+}
+
+/* Estilo del reset */
+.volverAJugar{
+	margin-top: 30px;
+	border: 2px black solid;
+	font-family: Arial;
+	background: #FFA359;
+	font-size: 15px;
+	padding: 10px 10px;
+	cursor: pointer;
+}

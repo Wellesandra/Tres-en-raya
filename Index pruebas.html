@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="es-ES">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tres En Raya</title>
+    <link rel="icon" href="iconTicTacToe.png" type="image/icon type">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Menú superior -->
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Selección Ficha 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <button id="circulos" onclick="juegaConQueFicha(1)" >Círculos</button>
+        <button id="cruces" onclick="juegaConQueFicha(2)">Cruces</button>
+      </div>
+    </div>
+    <button id="verEstadisticas" onclick="verEstadisticas()">Ver estadísticas</button>
+    <div class="dropdown">
+      <button class="dropbtn">Selección Dificultad 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <button id="sencillo" onclick="seleccionarDificultad(1)">Sencillo</button>
+        <button id="medio" onclick="seleccionarDificultad(2)">Medio</button>
+        <button id="complicado" onclick="seleccionarDificultad(3)">Complicado</button>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Texto sobre el proyecto y el juego -->
+  <div>
+    <h2>Tres en raya</h2>
+    <p>Este juego es el proyecto final de Victoria, tras el curso de TeachTech</p>
+    <p id="nombreJugador"></p>
+    <p id="textoDificultad"></p>
+    <p id="textoJuegasCon"></p>
+  </div>
+
+
+
+<!-- Tablero de tres en raya -->
+  <div class="tablero">
+    <button class="casilla" onclick="colocarFicha(0)"></button>
+    <button class="casilla" onclick="colocarFicha(1)"></button>
+    <button class="casilla" onclick="colocarFicha(2)"></button>
+    <button class="casilla" onclick="colocarFicha(3)"></button>
+    <button class="casilla" onclick="colocarFicha(4)"></button>
+    <button class="casilla" onclick="colocarFicha(5)"></button>
+    <button class="casilla" onclick="colocarFicha(6)"></button>
+    <button class="casilla" onclick="colocarFicha(7)"></button>
+    <button class="casilla" onclick="colocarFicha(8)"></button>
+  </div>
+
+
+<!-- Volver a jugar -->
+  <div>
+    <button class="volverAJugar" onclick="reset()"> Volver a jugar</button>
+  </div>
+  
+    
+  <script type="text/javascript" src="proyecto - pruebas.js"></script>  
+</body>
+</html>
